@@ -2,14 +2,6 @@ let appId = '4d3ed8e1e3621940bbb9fb5f31d3a40d';
 let units = 'metric';
 let searchMethod;
 
-const Url ='https://mohammadikhan-weather-app.code.com';
-
-$('.btn').click(function(){
-    $.getJSON(Url, function(result){
-        console.log(result)
-    });
-})
-
 function getSearchMethod(searchTerm) {
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' == searchTerm)
         searchMethod = 'zip';
